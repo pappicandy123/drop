@@ -1,0 +1,135 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static '' %}style.css">
+
+    <title>signup</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/dropbox.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Dropbox
+          </a>
+          <p style="text-align:end ;">Login</p>
+        </div>
+      </nav>
+    <div class="content">
+        <!-- content4  -->
+        <div class="profile">
+          <div class="container">
+            <div class="row justify-content-center gy-5">
+              <div class="col-1 col-sm-2 col-md-2 col-lg-3 order-lg-0 d-none d-lg-block">
+               
+              </div>
+              <div class="col-8 col-sm-8 col-md-7 col-lg-5 order-0 order-lg-1">
+                <div class="card hen">
+                  <!-- <a href="#"><img src="/img/model7.jpg"  class="card-img-top"></a> -->
+                  <div class="card-body">
+                    <div class="address">
+                        <div class="create d-flex">
+                            <p>Create an account</p>
+                            <a  href="#">or  login</a>
+                        </div>
+                        <div class="continue">
+                            <p>Continue with Google</p>
+                        </div>
+                      <form action="{% url 'signup' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                          <label for="exampleInputText1" class="form-label">username</label>
+                          <input name="username" type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputText1" class="form-label">first name</label>
+                          <input  name="first_name" type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputText1" class="form-label">last name</label>
+                          <input name="last_name" type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">email</label>
+                          <input name="email" type="email" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                        </div>
+                        
+                        <div class="mb-3 cat ">
+                          <label for="exampleInputText1" class="form-label">password</label>
+                          <input name="password1" type="password" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                         <div class="eye" onclick="myFunction()">
+                            <i class="fa-solid fa-eye" id="show-password"></i>
+                            <i class="fa-solid fa-eye-slash" id="hide-password"></i>
+                         </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputText1" class="form-label">repeat password</label>
+                          <input name="password2" type="password" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                        </div>
+                        <button type="submit" class="btn">Create an account</button>
+                        <div class="mb-3 password">
+                          <div id="textHelp" class="form-text">password should be at least 8 characters.</div>
+                          <div id="textHelp" class="form-text">password can be letters, numbers and symbols.</div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-8 col-sm-8 col-md-5  col-lg-3 order-1 order-lg-2 advert">
+                 <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10 mb-4">
+                   
+                 </div>
+              </div>
+              <!--  -->
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 mb-4">
+                 
+                </div>
+               </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        
+      
+   
+      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("exampleInputText1");
+            var y = document.getElementById("show-password");
+            var z = document.getElementById("hide-password");
+
+            if(x.type === "password"){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+
+    </script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,483 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static '' %}style.css">
+
+    <title>Dropbox</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <img src="/img/dropbox.png" alt="" width="30px">
+          <a class="navbar-brand ms-3" href="#">Dropbox</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Why Dropbox?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Solution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+             
+              
+            </ul>
+
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Get App</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'signup' %}">Sign up</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'login' %}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link star"> Get Started  <i class="fa-solid fa-arrow-right"></i></a>
+                </li>
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+    </nav>
+     <!-- ------------ hero section-------- -->
+    <div class="hero">
+        <h2 class="text">Join over 700 million registered</h2>
+        <h2 class="text">users who trust Dropbox</h2>
+
+        <p class="can">Easy to use, reliable, private, and secure. It’s no wonder Dropbox is the choice for storing and sharing</p>
+        <p class="can">your most important files.</p>
+         <div class="find-plan">
+            <a href="" class="find">Find My Plan     <i class="fa-solid fa-arrow-right"></i></a>
+         </div>
+        <div class="pic">
+            <img src="{% static '' %}img/dropbox img.jpg" alt="">
+            <div class="word">
+                <h2 class="text">See what sets Dropbox apart</h2>
+            </div>
+        </div>
+
+       
+        <!-- --------card------ -->
+        <div id="card1">
+            <div class="container">
+                <div class="card-list">
+                    <div>
+                        <img src="{% static '' %}img/emoji smile.svg" alt="">
+                        <p class="one">Your files, not ours</p>
+                        <p>With Dropbox, your files belong to you, not us, so you can be sure we’re not reselling your data.</p>
+                        
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/cloud done.svg" alt="">
+                        <p class="one">All your files in one place</p>
+                        <p>Store computer backups, photo libraries, thousands of documents—all your files, in the same place.</p>
+                       
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/twinkle.svg" alt="">
+                        <p class="one">One-of-a-kind functionality</p>
+                        <p>Store files as large as 2 TB each, sync at light speed, and allow anyone to preview nearly 200 file types.</p>
+                        
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/shield.svg" alt="">
+                        <p class="one">Ease of use and security</p>
+                        <p>2/3 of surveyed users say Dropbox keeps their files more secure and we’re a leader in ease of use.</p>
+                        
+                    </div>
+                </div>
+    
+            </div>
+         </div>
+    </div> 
+    <!-- -------- content --------  -->
+    <div class="content1">
+        <div class="com">
+            <h1>A set of products to help you do more</h1>
+        </div>
+        <div class="card2">
+            <div class="container">
+                <div class="card-list2">
+                    <div>
+                        <img src="{% static '' %}img/Dropbox.svg" alt="">
+                        <p class="two">Dropbox</p>
+                        <p>Securely store, organize, and share all your files.</p>
+                        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/Sign.svg" alt="">
+                        <p class="two">Sign</p>
+                        <p>Streamline your document workflows with legally-binding eSignatures.</p>
+                        <a href="#">Learn more  <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/Docsend.svg" alt="">
+                        <p class="two">DocSend</p>
+                        <p>Securely share your documents with real-time insights, so you know what's most impactful.</p>
+                        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/Backup.svg" alt="">
+                        <p class="two">Backup</p>
+                        <p>Automatically back up important files on your devices to the cloud and easily restore them.</p>
+                        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card-list2">
+                    <div>
+                        <img src="{% static '' %}img/Capture.svg" alt="">
+                        <p class="two">Capture</p>
+                        <p>Get your message across with screenshots, GIFs, or videos recorded right on your screen.</p>
+                        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/Transfer.svg" alt="">
+                        <p class="two">Transfer</p>
+                        <p>Quickly and securely deliver large files—up to 100 GB—to anyone.</p>
+                        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/Paper.svg" alt="">
+                        <p class="two">Paper</p>
+                        <p>Create collaborative documents to coordinate work and drive projects forward.</p>
+                        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div>
+                        <img src="{% static '' %}img/Passwords.svg" alt="">
+                        <p class="two">Passwords</p>
+                        <p>Automatically store unlimited passwords in one central, secure place.</p>
+                        <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="com">
+            <h1>What else can Dropbox help you do?</h1>
+            <p>Dropbox brings everything—traditional files, cloud content, and web shortcuts—together in one place.</p>
+        </div>
+    </div>
+    <!-- ----------content2---------- -->
+    <div class="content2">
+        <div class="accordion accord" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+            
+           <div class="accordion-item accordion-item--sac">
+             <div class="accordion-item__img-body">
+                 <img src="{% static '' %}img/img-acc 1.png" alt="" class="accordion-item__img" width="50%">
+             </div>
+           </div>  
+    </div>
+  <!-- ---------- content 3 ----------  -->
+   <div class="content3">
+    <div class="google">
+        <p class="how">How will you use Dropbox?</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row d-flex tim">
+            <div class="col-6 work">
+                <div class="man" >
+                    <img src="{% static '' %}img/for work.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-6  use">
+                <div class="pick" >
+                    <img src="{% static '' %}img/for personal use.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+   </div>
+   </div>
+   <!-- ------------- content4 ---------  -->
+   <div class="content1">
+    <div class="com">
+        <h1>A set of products to help you do more</h1>
+    </div>
+    <div class="card2">
+        <div class="container">
+            <div class="card-list2">
+                <div>
+                    <img src="{% static '' %}img/zoom.png" alt="">
+                    <p class="two">Zoom</p>
+                    <p>Enhance remote collaboration with Zoom instant meetings and video recordings. </p>
+                    
+                </div>
+                <div>
+                    <img src="{% static '' %}img/slack.png" alt="">
+                    <p class="two">Slack</p>
+                    <p>Bring Slack conversations and Dropbox content together to keep teams in sync.</p>
+                    
+                </div>
+                <div>
+                    <img src="{% static '' %}img/adobe.png" alt="">
+                    <p class="two">Adobe Creative Cloud</p>
+                    <p>Easily and securely send files to clients and vendors from within Adobe Photoshop.</p>
+                    
+                </div>
+                <div>
+                    <img src="{% static '' %}img/micro.png" alt="">
+                    <p class="two">Microsoft Office</p>
+                    <p>Easily access, edit, and share Office docs online in Dropbox.</p>
+                    
+                </div>
+            </div>
+            <div class="card-list2">
+                <div>
+                    <img src="{% static '' %}img/google.png" alt="">
+                    <p class="two">Google Workspace</p>
+                    <p>Create, edit, and share Google Docs, Sheets, and Slides in Dropbox.</p>
+                   
+                </div>
+                <div>
+                    <img src="{% static '' %}img/trello.png" alt="">
+                    <p class="two">Trello</p>
+                    <p>Collaborate on team projects in Trello with Dropbox content.</p>
+                    
+                </div>
+                <div>
+                    <img src="{% static '' %}img/canvas.png" alt="">
+                    <p class="two">Canvas</p>
+                    <p>Upload course files or assignments straight from Dropbox to Canvas.</p>
+                    
+                </div>
+                <div>
+                    <img src="{% static '' %}img/asana.png" alt="">
+                    <p class="two">Asana</p>
+                    <p>Track all of your team’s work with Asana while keeping Dropbox content alongside.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- -------------------- content5 ---------------------  -->
+   <div class="content5">
+    <div class="burna">
+      <h2 class="text">Trusted by over 700 million registered</h2>
+      <h2 class="text">users and 600,000 teams</h2>
+      <p class="can"><a href="#">View more customer stories</a></p>
+
+    </div>
+    <div class="can">
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active  d-flex">
+            <img src="{% static '' %}img/back1.jpg" class="d-block" alt="..." width="50%">
+            <div class="back">
+              <p>“Dropbox has been tremendously helpful for social media. I can hop on anytime and pull whatever photo is inspiring me to post.”</p>
+              <a href="#">Read the full story</a>
+            </div>
+          </div>
+          <!-- <div class="carousel-item d-flex">
+            <img src="/img/back2.jpg" class="d-block" alt="..." width="50%">
+            <div class="back">
+              <p>“Dropbox increased our team’s collaboration while working from home, which has increased our flexibility and could revolutionize our office culture.”</p>
+            </div>
+            <a href="#">Read the full story</a>
+          </div>
+          <div class="carousel-item d-flex">
+            <img src="/img/back3.jpg" class="d-block w-50" alt="...">
+            <div class="back">
+              <p>“We’re a grass-roots nonprofit. When we use a tool that the rest of the design world uses, it helps professionalize our organization.”</p>
+            </div>
+            <a href="#">Read the full story</a>
+          </div>
+          <div class="carousel-item d-flex">
+            <img src="/img/back4.jpg" class="d-block w-50" alt="...">
+            <div class="back">
+              <p>“We’re a grass-roots nonprofit. When we use a tool that the rest of the design world uses, it helps professionalize our organization.”</p>
+            </div>
+            <a href="#">Read the full story</a>
+          </div>
+          <div class="carousel-item d-flex">
+            <img src="/img/back5.jpg" class="d-block w-50" alt="...">
+            <div class="back">
+              <p>“We’re a grass-roots nonprofit. When we use a tool that the rest of the design world uses, it helps professionalize our organization.”</p>
+            </div>
+            <a href="#">Read the full story</a>
+          </div>
+          <div class="carousel-item d-flex">
+            <img src="/img/back6.jpg" class="d-block w-50" alt="...">
+            <div class="back">
+              <p>“We’re a grass-roots nonprofit. When we use a tool that the rest of the design world uses, it helps professionalize our organization.”</p>
+            </div>
+            <a href="#">Read the full story</a>
+          </div>
+          <div class="carousel-item d-flex">
+            <img src="/img/back7.jpg" class="d-block w-50" alt="...">
+            <div class="back">
+              <p>“We’re a grass-roots nonprofit. When we use a tool that the rest of the design world uses, it helps professionalize our organization.”</p>
+            </div>
+            <a href="#">Read the full story</a> -->
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="let d-flex">
+        <h1>For all things worth sharing.</h1>
+        <a href="" class="nav-link star"> Get Started  <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <!-- ----------------- footer ---------------  -->
+
+    <div class="footer">
+      <div class="footer1">
+        <div class="container pt-5 pb-4">
+          <div class="row justify-content-center koko gy-5">
+            <div class="col-10 col-sm-4 col-md-4 col-lg-2">
+              <h3>Dropbox</h3>
+              <ul class="list-unstyled">
+                   <li>Desktop app</li>
+                   <li>Mobile app</li>
+                   <li>Integrations</li>
+                   <li>Features</li>
+                   <li>Solutions</li>
+                   <li>Do more than store</li>
+                   <li>Security</li>
+                   <li>Advance access</li>
+              </ul>
+            </div>
+            <div class="col-10 col-sm-4 col-md-4 col-lg-2">
+              <h3>Product</h3>
+              <ul class="list-unstyled">
+                   <li>plus</li>
+                   <li>professional</li>
+                   <li>Business</li>
+                   <li>Enterprise</li>
+                   <li>Dropbox Sign</li>
+                   <li>DocSend</li>
+                   <li>Plans</li>
+                   <li>Product updates</li>
+              </ul>
+            </div>
+            <div class="col-10 col-sm-4 col-md-4 col-lg-2">
+              <h3>Support</h3>
+              <ul class="list-unstyled">
+                   <li>Help center</li>
+                   <li>Mobile app</li>
+                   <li>Contact us</li>
+                   <li>Privacy & terms</li>
+                   <li>Cookies policy</li>
+                   <li>Cookies & CCPA preferences</li>
+                   <li>Sitemap</li>
+                   <li>Learning resources</li>
+              </ul>
+            </div>
+            <div class="col-10 col-sm-4 col-md-4 col-lg-2">
+              <h3>Community</h3>
+              <ul class="list-unstyled">
+                   <li>Blog</li>
+                   <li>Developers</li>
+                   <li>Integrations</li>
+                   <li>Community forums</li>
+                   <li>Referrals</li>
+              </ul>
+            </div>
+            <div class="col-10 col-sm-4 col-md-4 col-lg-2">
+              <h3>Company</h3>
+              <ul class="list-unstyled">
+                   <li>About us</li>
+                   <li>Jobs</li>
+                   <li>Investor relations</li>
+                   <li>ESG</li>
+                   <li>Partners</li>
+              </ul>
+            </div>
+          </div>
+          <div class="icon">
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+
+   
+      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
