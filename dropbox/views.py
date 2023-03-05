@@ -90,9 +90,9 @@ def login(request):
     if request.method =="POST":
         name = request.POST['username']
         passw = request.POST['password']
-        gun = authenticate(username = name, password = passw)
-        if gun:
-            login( request,gun)
+        user = authenticate(username = name, password = passw)
+        if user:
+            login( request,user)
             messages.success(request, 'signin successful')
             return redirect('index')
         else:

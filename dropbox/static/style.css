@@ -378,6 +378,7 @@ body{
     margin-top: 7rem;
     background: black;
     color: white;
+    /* padding: 2rem; */
 }
 .footer .container{
     /* padding: 3rem 0 1rem; */
@@ -386,4 +387,5 @@ body{
 .footer .footer1 h3{
     color: white;
     text-transform: capitalize;
+    font-weight: 800;
 }
